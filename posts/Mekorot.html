@@ -1,0 +1,19 @@
+<html>
+<body>
+<div><input type="text" id="scheme"></div>
+<div><input type="text" id="type"></div>
+<div><input type="text" id="host"></div>
+<div><input type="button" onClick="goto"></div>
+
+
+<script>
+function goto()
+{
+  const a=document.getElementById("schema").value+"://"+document.getElementById("host").value+"/"+document.getElementById("type").value
+ alert(a);
+window.href=a;
+}
+</script>
+</body>
+
+</html>
